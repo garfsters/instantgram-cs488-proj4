@@ -1,0 +1,93 @@
+.course_container {background-color:#eeeeee; border-radius:10px; padding:10px;}
+.course_name {font-weight:bold; font-size:18px; color:#000000;}
+.course_description { color:#444444; }
+.course_credits { color:#ee0000; }
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #0f0f1a;
+    color: #e0f7ff;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff77e9;
+    text-align: center;
+    text-shadow: 0 0 10px #ff77e9, 0 0 20px #7df9ff;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="file"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #7df9ff;
+    font-size: 16px;
+    background-color: #1c1c2e;
+    color: #ffffff;
+    margin-right: 10px;
+    box-shadow: 0 0 10px #7df9ff3f;
+}
+
+button {
+    padding: 10px 16px;
+    background: linear-gradient(145deg, #ff77e9, #7df9ff);
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 12px #ff77e9, 0 0 12px #7df9ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff77e9, 0 0 20px #7df9ff;
+}
+
+#divResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.image-card {
+    width: 160px;
+    border-radius: 12px;
+    background-color: #1a1a2b;
+    border: 1px solid #ff77e9;
+    box-shadow: 0 0 10px #7df9ff55;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #ff77e9aa, 0 0 20px #7df9ffaa;
+}
+
+.image-card img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 2px solid #7df9ff;
+}
+
+.caption {
+    font-size: 14px;
+    color: #ffb3ff;
+    word-wrap: break-word;
+    text-shadow: 0 0 5px #ff77e9;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/styles.css"/>
+        <title>Serenity's Instantgram</title>
+    </head>
+    <body>
+
+        <h1>Serenity's Social Media</h1>
+
+        <div>
+            Caption: <input type="text" id="caption" placeholder="Type something.."/>
+            <input type="file" id="file" />
+            <button onclick="upload_file();">Upload</button>
+        </div>
+
+        <hr/>
+        <h2>Photo Booth</h2>
+        <div id="divResults"></div>
+
+        <script src="/static/p4script.js"></script>
+        <script>
+            list_files();
+        </script>
+
+    </body>
+
+</html>
